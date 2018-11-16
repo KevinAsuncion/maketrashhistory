@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Say No To Cups</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="index.css">
-    </head>
-    <body>
-        <div id="greeting-container"></body>
-            <h1 id="greeting">Say No To Cups!</h1>
-            <img id="cup-img" src="./cup.svg" />
-            <p id="cup-number"></p>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>Say No To Cups</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div id="greeting-container">
+</body>
+<h1 id="greeting">Say No To Cups!</h1>
+<img id="cup-img" src="./cup.svg"/>
+<p id="cup-number"></p>
+</div>
 
-        <div>
-            <p class="number"></p>
-        </div>
-        <script src="index.js"></script>
-    </body>
+<div>
+  <p class="number"></p>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    //insert-stuff-here
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="index.js"></script>
+</body>
 </html>
